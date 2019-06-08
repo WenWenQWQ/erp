@@ -1,0 +1,45 @@
+@import './../../style/default.less';
+.header{
+  background-color: @colorM;
+  height: 90px;
+  .header-top{
+    height:50px;
+    line-height: 50px;
+    padding: 0 20px;
+    text-align: right;
+    .userInfo{
+      color: rgba(0, 0, 0, 0.65);
+      img{
+        display: inline-block;
+        height: 30px;
+        margin-right: 5px;
+      }
+    }
+    .signOut{
+      margin-left: 15px;
+    }
+  }
+  .breadcrumb{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-top: 1px solid #f9c700;
+    .breadcrumb-title{
+      font-size: @fontC;
+      text-align: center;
+      &:after{
+        position: absolute;
+        content: '';
+        left: 78px;
+        top: 39px;
+        border-top: 9px solid @colorM;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+      }
+      }
+    .time{
+      text-align: right;
+      font-size: 14px;
+      }
+  }
+}
